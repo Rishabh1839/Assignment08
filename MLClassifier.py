@@ -1,3 +1,24 @@
+print("=" * 20)
+print("Machine Learning Classifier")
+print("created by Rishabh Singh")
+print("=" * 20)
+print("What's the purpose of this program?")
+print("For this program we will be using dependencies that will help us create our ML dataset.")
+print("We include the SciKit learn library which is used for data science in python.")
+print("We will be using the decision tree learning algorithm for our program.")
+print("In Computer Science Decision Tree is used fo observing items to conclusions about the item's target value.")
+print("In decision analysis, this algorithm can be used for visualizing and representing decisions and decision making.")
+print("Here we use the iris dataset, where we will be splitting the test data into X and Y values")
+print("We have labeled our X value as iris data and the Y value as the iris target.")
+print("Next we will be splitting this data into two partitions which will be our training and test data")
+print("We use our X train/test and Y train/test for training and testing our data.")
+print("Our next step includes having to use a model selection, train and testing library.")
+print("This splits our data  in half with the help of test_size=0.5 that splits Y and X.")
+print("We then require to use the decision tree classifier where we train the classifier on our training data.")
+print("We then call out our predict method to classify the training data.")
+print("now we will print our predictions that correspond the the type of iris predicted for each row of our data.")
+print("We then observe how accurate our classifier runs on the testing data.")
+print("In the end we compare our predicted labels with true labels for accuracy calculations.")
 # importing the necessary libraries required
 from sklearn import datasets
 
@@ -23,7 +44,7 @@ from sklearn import tree
 decision_tree_classifier = tree.DecisionTreeClassifier()
 
 # training the classifier on my training data
-decision_tree_classifier.fit(trainX, trainX)
+decision_tree_classifier.fit(trainX, trainY)
 
 # calling out the predict method to classify the training data
 predictions = decision_tree_classifier.predict(testX)
